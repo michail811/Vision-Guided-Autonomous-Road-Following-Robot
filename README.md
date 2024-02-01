@@ -54,7 +54,7 @@ This repository includes two key components:
 ## Run the ROS Package:
   Navigate to your workspace. For every new terminal you open source it.
 
-  1st terminal: roslaunch turtlebot3_gazebo turtlebot3_modified.launch
+  1st terminal: roslaunch <package name> <launch file>.launch , # launch your turtlebot
   2nd terminal: rosrun line_detection_package line_detection_and_goal_angle_calculation.py
   3d terminal:  rosrun line_detection_package road_following_controller.py 
 
