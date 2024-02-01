@@ -30,37 +30,38 @@ This repository includes two key components:
 ## Installation
 - Create a New Catkin Workspace:
 
-  mkdir -p ~/catkin_ws/src
-  cd ~/catkin_ws
-  catkin_make
+  - mkdir -p ~/catkin_ws/src
+  - cd ~/catkin_ws
+  - catkin_make
 
 - Clone the Repository into src Directory:
 
-  cd ~/catkin_ws/src
-  git clone <repository_url>
+  - cd ~/catkin_ws/src
+  - git clone <repository_url>
 
 - Build the Catkin Workspace:
-  cd ~/catkin_ws
-  catkin_make
+  - cd ~/catkin_ws
+  - catkin_make
 
 - Source the Catkin Workspace:
-  source devel/setup.bash
+  - source devel/setup.bash
 
 - optional:Install System Dependencies with rosdep
-  Replace <your_ros_distro> with your ROS distribution (e.g., melodic, noetic).
+  - Replace <your_ros_distro> with your ROS distribution (e.g., melodic, noetic).
 
   rosdep install --from-paths src --ignore-src --rosdistro <your_ros_distro> -y
   
 ## Run the ROS Package:
-  Navigate to your workspace. For every new terminal you open source it.
+  - Navigate to your workspace. For every new terminal you open source it.
 
-  1st terminal: roslaunch <package name> <launch file>.launch , # launch your turtlebot
-  2nd terminal: rosrun line_detection_package line_detection_and_goal_angle_calculation.py
-  3d terminal:  rosrun line_detection_package road_following_controller.py 
+  - 1st terminal: roslaunch <package name> <launch file>.launch , # launch your turtlebot
+  - 2nd terminal: rosrun line_detection_package line_detection_and_goal_angle_calculation.py
+  - 3d terminal:  rosrun line_detection_package road_following_controller.py 
 
 ## Customization
-Experiment with vision-preprocessing (line_detection_and_goal_angle_calculation.py), and controller parameters (road_following_controller.py ) to suit your robot's specifications. Also, experiment with the camera's physical position to ensure road lanes are within the region of interest and have a clear visual perspective.
-Modify the vision processing pipeline in line_detection_and_goal_angle_calculation.py for improved lane detection. Tweak parameters to achieve optimal performance based on your environment.
+- Experiment with vision-preprocessing (line_detection_and_goal_angle_calculation.py), and controller parameters (road_following_controller.py ) to suit your robot's specifications. 
+- Also, experiment with the camera's physical position to ensure road lanes are within the region of interest and have a clear visual perspective.
+- Modify the vision processing pipeline in line_detection_and_goal_angle_calculation.py for improved lane detection. Tweak parameters to achieve optimal performance based on your environment.
 
 ## Authors
 Michail Potamitis 
